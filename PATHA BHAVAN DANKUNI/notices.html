@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patha Bhavan Dankuni - Home</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Patha Bhavan Dankuni Logo" class="circular-logo">
+                    <span class="school-name">Patha Bhavan Dankuni</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="academics.html">Academics <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="academics.html#primary">Primary Section</a></li>
+                            <li><a href="academics.html#secondary">Secondary Section</a></li>
+                            <li><a href="academics.html#higher-secondary">Higher Secondary</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="notices.html" class="active">Notices</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    
+    <section class="internal-hero-section" style="background-image: url('images/notices-hero.jpg');">
+        <div class="container hero-content">
+            <h1 class="page-title">Latest Notices</h1>
+        </div>
+    </section>
+
+    <section class="notices-page-section section-padding">
+        <div class="container">
+            <div class="notices-controls">
+                <div class="search-container">
+                    <input type="text" id="notice-search" placeholder="Search notices...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="sort-container">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="latest">Latest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="notices-grid">
+                <div class="notice-card" data-date="2023-10-26">
+                    <span class="notice-date">October 26, 2023</span>
+                    <h3>Annual Sports Day - Rescheduled</h3>
+                    <p>Due to unforeseen weather conditions, the Annual Sports Day has been rescheduled to November 5, 2023. All participants and parents are requested to note the change. We apologize for any inconvenience caused.</p>
+                    <a href="#" class="read-more" data-target="notice-1">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span id="notice-1" class="hidden-content">Additional details about the Sports Day will be communicated to team leaders and class teachers. Please check the school website regularly for updates. Thank you for your cooperation and understanding.</span>
+                </div>
+                <div class="notice-card" data-date="2023-10-20">
+                    <span class="notice-date">October 20, 2023</span>
+                    <h3>Parent-Teacher Meeting for Grades 6-10</h3>
+                    <p>A mandatory Parent-Teacher Meeting will be held on November 10, 2023, for students in Grades 6-10. This is a crucial opportunity to discuss academic progress and future planning.</p>
+                    <a href="#" class="read-more" data-target="notice-2">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span id="notice-2" class="hidden-content">Parents are requested to book a time slot with their respective class teachers in advance. The meeting will be held from 9 AM to 1 PM in the school hall. We look forward to your presence.</span>
+                </div>
+                <div class="notice-card" data-date="2023-10-15">
+                    <span class="notice-date">October 15, 2023</span>
+                    <h3>Half-Yearly Examination Schedule</h3>
+                    <p>The schedule for the upcoming half-yearly examinations has been published. Students and parents can download the full timetable from the school's online portal. Best of luck to all students.</p>
+                    <a href="#" class="read-more" data-target="notice-3">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span id="notice-3" class="hidden-content">A separate notice detailing the syllabus for each subject has also been uploaded. Please ensure you and your child review the exam schedule and syllabus carefully.</span>
+                </div>
+                <div class="notice-card" data-date="2023-10-10">
+                    <span class="notice-date">October 10, 2023</span>
+                    <h3>Holiday Notice: Diwali</h3>
+                    <p>The school will remain closed from November 1 to November 4, 2023, on account of the Diwali festival. Classes will resume on November 5. We wish everyone a happy and safe festival.</p>
+                    <a href="#" class="read-more" data-target="notice-4">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span id="notice-4" class="hidden-content">We remind parents and students to use this holiday for rest and celebration while staying safe. The school will not be accessible during these dates.</span>
+                </div>
+                <div class="notice-card" data-date="2023-10-05">
+                    <span class="notice-date">October 5, 2023</span>
+                    <h3>Extracurricular Activities Registration</h3>
+                    <p>Registration for new extracurricular clubs is now open. Students can register for various activities, including debate, coding, and environmental clubs. Please visit the school office for more details.</p>
+                    <a href="#" class="read-more" data-target="notice-5">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span id="notice-5" class="hidden-content">Activities this year include a new Robotics Club, a school newspaper team, and an advanced art workshop. The last date for registration is October 20.</span>
+                </div>
+                <div class="notice-card" data-date="2023-10-01">
+                    <span class="notice-date">October 1, 2023</span>
+                    <h3>Annual School Fest: Call for Volunteers</h3>
+                    <p>We are looking for student volunteers to help organize the Annual School Fest. If you are interested in being a part of the organizing committee, please register your name with the student council before October 15.</p>
+                    <a href="#" class="read-more" data-target="notice-6">Read More <i class="fas fa-arrow-right"></i></a>
+                    <span id="notice-6" class="hidden-content">Volunteers will be responsible for event coordination, managing stalls, and helping with stage setup and cleanup. All volunteers will receive a certificate of participation.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 School Lane, Dankuni, West Bengal</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@pathabhavandankuni.com</p>
+            </div>
+            <div class="footer-col quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="notices.html">Notices</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Patha Bhavan Dankuni. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
